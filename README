@@ -24,4 +24,4 @@ The following python packages are required to run thumbalizr
     requests
 
     
-To use Thmbalizr with a Django website, check out https://github.com/juliensobrier/thumbalizr-django
+To use Thumbalizr with a Django website, check out https://github.com/juliensobrier/thumbalizr-django

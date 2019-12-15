@@ -10,7 +10,7 @@ def read(fname):
 requirements = ['hashlib', 'requests']
 
 setup(
-    name='Thumablizr',
+    name='Thumbalizr',
     version='1.0.0',
     py_modules=['thumbalizr'],
     description='Client to interact with Thumbalizr',
