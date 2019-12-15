@@ -1,8 +1,6 @@
 Thumbalizr version 1.0.0
 ================================
 
-Thumbalizr (https://thumbalizr.com/) is a web service to create website screenshots.
-
 Thumbalizr (https://thumbalizr.com/) is a web service to easily embed live screenshots of any URL in your website. Thumbalizr has full support for Flash, JavaScript, CSS, & HTML5.
 
 You can install the library from PyPI: https://pypi.python.org/pypi/Thumbalizr
@@ -24,4 +22,17 @@ The following python packages are required to run thumbalizr
     requests
 
     
-To use Thumbalizr with a Django website, check out https://github.com/juliensobrier/thumbalizr-django
+To use Thumbalizr with a Django website, check out https://github.com/juliensobrier/thumbalizr_django
+
+EXAMPLE
+
+	from thumbalizr import Thumbalizr
+	
+	thumbalizr = Thumbalizr('MY_KEY', 'SECRET')
+	# Generate a URL for the thumbnail
+	url = thumbalizr.url('https://www.google.com/', {'bwidth: 1280, 'bheight': 1024, 'width': 800});
+	print(url)
+	
+	# Download the thumbnail
+	results = thumbalizr.download_wait(url, 'google.png');
+	print("%s"  % (results[0]))
